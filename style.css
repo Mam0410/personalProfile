@@ -8,17 +8,19 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: "Roboto Condensed", sans-serif;
 }
+
 .card_container{
     display: flex;
     width: fit-content;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 20px;
 }
 
 .card_photo{
-/*     border: 2px solid brown; */
+    border: 3px solid #9F8170;
     border-radius: 10px;
 }
 
@@ -29,12 +31,61 @@ body {
 
 .card_info{
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .card_description{
-    border: 1px solid blue;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
-.card_social{
-    border: 1px solid green;
+.card_description h1 {
+    color: #9F8170;
+    margin-top: 10px;
+}
+
+.card_description p {
+    color: #353839;
+    margin: 0;
+}
+
+.card_social {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card_social div {
+    display: flex;
+    /* margin: 5px 0; */
+}
+
+.card_social img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.card_social a {
+    text-decoration: none;
+    color: #9F8170;
+/*     font-weight: bold; */
+}
+
+/* .btn-container {
+    display: flex;
+    justify-content: center;
+} */
+
+.btn {
+    background-color: #9F8170;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
